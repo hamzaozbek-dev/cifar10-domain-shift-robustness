@@ -131,7 +131,7 @@ intervention_train_tf = transforms.Compose([
 ])
 
 # Ham test seti (Bozulmalar [0, 1] tensör üzerinde uygulanıp ardından normalize edilir)
-raw_test_data = datasets.CIFAR-10(root="./data", train=False, download=True, transform=transforms.ToTensor())
+raw_test_data = datasets.CIFAR10(root="./data", train=False, download=True, transform=transforms.ToTensor())
 CLASSES = raw_test_data.classes
 
 # -------------------------------------------------------------
